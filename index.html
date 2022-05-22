@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="game.css">
-    <title>Document</title>
+    <title>tic  tac toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'> </script>
 </head>
- 
-  <div>
-    <h1>contact file</h1>
-    <p> how we can help you</p>
-    <li>your name<li>
-    
+<body>
+    <div id="container">
+<!-- starting page -->
+    <div id="startingpage">
+        <h2>tic tac toe </h2>
+        <div id="line"></div>
+        <h4>select which you want to be? </h4>
+        <div id="button">
+            <button id="playerx" class=" choose">player ( x )</button>
+            <button id="playero" class=" choose">player ( o )</button>
+        </div>
     </div>
-
-
-   
+    <!--main page -->
+    <div id="mainpage">
+        <div id="headerbtns">
+            <button id="">x turn</button>
+            <button id="o_turn">o turn</button>
+            <div id="showchange"></div>
+        </div>
+        <div id="gameboard">
+            <div class="boxes"><i class="fas fa-times"></i></div> 
+            <div class="boxes"><i class="fas fa-circle-notch"></i></div>
+            <div class="boxes"><i class="fas fa-times"></i></div>
+            <div class="boxes"><i class="fas fa-circle-notch"></i></div>
+            <div class="boxes"><i class="fas fa-times"></i></div>
+            <div class="boxes"><i class="fas fa-circle-notch"></i></div>
+            <div class="boxes"><i class="fas fa-times"></i></div>
+            <div class="boxes"><i class="fas fa-circle-notch"></i></div>
+            <div class="boxes"><i class="fas fa-times"></i></div>
+        </div>
+    </div>
+    <!-- winner page-->
+    <div id=" winner"></div>
+    <h2 id="winnername">player x win the Game!</h2>
+    <div i="button">
+        <button id="quit">play again</button>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
